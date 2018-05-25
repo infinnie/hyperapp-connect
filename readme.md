@@ -50,3 +50,16 @@ withInject(app)({
     </div>);
 }, document.getElementById("app"));
 ```
+
+## Misc
+**Does the `render()` function support returning an array?**
+
+No, unfortunately not currently. For your returned arrays in `render()` functions to behave correctly, consider using https://github.com/infinnie/hyperapp (any of the branches that is not patch-1) instead.
+
+**Which version of ECMAScript is the library written in?**
+
+Although Hyperapp Dynamic Connect’s generated build code is ECMAScript 5 compatible in syntax, it requires `Object.assign()` which is an ECMAScript 6 method, which is unfortunate for old IE. Consider adding a polyfill that shims at lease `Object.assign()` if support is desired.
+
+**Does it support IE8 or below?**
+
+Not in this repository. But maybe https://github.com/infinnie/countertest would one day get updated to support IE 6-8 for more complicated use cases.
