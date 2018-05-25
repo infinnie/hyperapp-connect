@@ -7,7 +7,7 @@ Connect your components & dynamically inject actions.
 Component.jsx
 ```jsx
 import { connect } from "hyperapp-dynamic-connect";
-import { selector, mutations, operations } from "functions";
+import { selector, mutations, operations } from "./functions";
 
 var Connector = connect("pageData")(selector, mutations, operations);
 
