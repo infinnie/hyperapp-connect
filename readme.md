@@ -6,6 +6,7 @@ Connect your components & dynamically inject actions.
 ## Usage
 Component.jsx
 ```jsx
+import { h } from "hyperapp";
 import { connect } from "hyperapp-dynamic-connect";
 import { selector, mutations, operations } from "./functions";
 
