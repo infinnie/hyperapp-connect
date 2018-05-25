@@ -1,6 +1,8 @@
 {
     "name": "hyperapp-dynamic-connect",
-    "version": "0.0.1",
+    "version": "0.0.2",
+    "module": "src/index.js",
+    "main": "dist/build.js",
     "repository": {
         "url": "https://github.com/infinnie/hyperapp-connect"
     },
