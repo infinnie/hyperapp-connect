@@ -8,7 +8,10 @@ module.exports = {
         example: "./example/index.jsx"
     }, output: {
         path: path.resolve(__dirname, "./dist"),
-        filename: "[name].js"
+        filename: "[name].js",
+        library: "hyperapp-dynamic-connect",
+        libraryTarget: "umd",
+        umdNamedDefine: true
     }, module: {
         rules: [{
             test: /\.jsx$/,
