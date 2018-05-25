@@ -62,4 +62,4 @@ Although Hyperapp Dynamic Connect’s generated build code is ECMAScript 5 compa
 
 **Does it support IE8 or below?**
 
-Not in this repository. But maybe https://github.com/infinnie/countertest would one day get updated to support IE 6-8 for more complicated use cases.
+Not in this repository (unless shimmed). But maybe https://github.com/infinnie/countertest would one day get updated to support IE 6-8 for more complicated use cases.
