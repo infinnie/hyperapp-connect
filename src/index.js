@@ -43,7 +43,7 @@ function setPath(origState, path, val) {
     return ret;
 }
 
-export var connect = function (path) {
+export function connect(path) {
     var hasPath = arguments.length > 0;
     return (
         /**
@@ -88,7 +88,7 @@ export var connect = function (path) {
         });
 };
 
-export var withInject = function (app) {
+export function withInject(app) {
     return function (state, actions, view, root) {
         return app(state, Object.assign({}, actions || {}, {
             inject: function (x) {

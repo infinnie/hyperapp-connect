@@ -1,6 +1,6 @@
 {
     "name": "hyperapp-dynamic-connect",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "module": "src/index.js",
     "main": "dist/build.js",
     "repository": {
@@ -21,8 +21,7 @@
         "babel-loader": "7.1.4"
     },
     "scripts": {
-        "build": "webpack --progress --hide-modules &&npm run minify",
-        "init": "eslint --init",
-        "minify": "uglifyjs dist/build.js -o dist/build.js -mc pure_funcs=['Object.defineProperty']"
+        "build": "webpack --progress --hide-modules",
+        "init": "eslint --init"
     }
 }
