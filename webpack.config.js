@@ -10,7 +10,7 @@ module.exports = {
         path: path.resolve(__dirname, "./dist"),
         filename: "[name].js",
         library: {
-            root: "hyperappDynamicConnect",
+            root: "HyperappDynamicConnect",
             amd: "hyperapp-dynamic-connect"
         },
         libraryTarget: "umd",
