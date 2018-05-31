@@ -1,5 +1,4 @@
 /* eslint-env node */
-/* eslint-disable no-console */
 var path = require("path");
 
 module.exports = {
@@ -8,6 +7,7 @@ module.exports = {
         example: "./example/index.jsx"
     }, output: {
         path: path.resolve(__dirname, "./dist"),
+        publicPath: "/dist/",
         filename: "[name].js",
         library: {
             root: "HyperappDynamicConnect",
@@ -22,6 +22,7 @@ module.exports = {
             exclude: /node_modules/,
             options: {
                 plugins: [
+                    "syntax-dynamic-import",
                     [
                         "transform-react-jsx",
                         {

@@ -86,7 +86,7 @@ export function connect(path) {
                 };
             };
         });
-};
+}
 
 export function withInject(app) {
     return function (state, actions, view, root) {
@@ -96,4 +96,4 @@ export function withInject(app) {
             }
         }), view, root);
     };
-};
+}
